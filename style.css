@@ -1,0 +1,1613 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+.whole {
+    height: 100vh;
+}
+
+#navigationBar {
+    height: 10vh;
+    background-color: #000022;
+}
+
+#navigationBar #nav ul {
+    list-style: none;
+    background-color: #000022;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+    font-size: 16px;
+}
+
+#navigationBar #nav ul a {
+    text-decoration: none;
+    color: dodgerblue;
+    font-weight: 700;
+    transition: 0.3s ease;
+    margin-right: 69px;
+    margin-left: 04px;
+}
+
+
+#navigationBar #nav ul a:hover {
+    color: #ffffff;
+}
+
+#navigationBar #nav ul li a.active {
+    color: white;
+}
+
+#navigationBar #nav ul li i {
+    color: #a3bded;
+}
+
+/* Main============================================================================== */
+
+.main {
+    background-color: #000022;
+    width: 100%;
+    height: 90vh;
+}
+
+.infoContainer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.devInfo {
+    color: #a3bded;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: "Montserrat", serif;
+    width: 50%;
+}
+
+.devInfo .about ul {
+    list-style-type: "\27A5";
+    margin-left: 60px;
+}
+
+.devInfo .about ul li {
+    font-size: 25px;
+    letter-spacing: 2px;
+    margin-bottom: 9px;
+}
+
+/* .hello{
+    font-size: 65px;
+} */
+.name {
+    font-size: 75px;
+    font-weight: 900;
+    margin-bottom: 20px;
+    text-shadow: 0 2px 100px dodgerblue;
+}
+
+.about {
+    font-size: 19px;
+    font-family: "Montserrat", serif;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+/* .moreAbout {
+    font-family: "Fira Sans", serif;
+    font-size: 22px;
+    margin-top: 23px;
+    background-color: red;
+} */
+
+.buttons {
+    margin-top: 34px;
+
+}
+
+.buttons button {
+    font-family: "Montserrat", serif;
+    padding: 18px 24px;
+    background-color: transparent;
+    color: white;
+    box-shadow: 0 2px 10px #333333;
+    border-radius: 35px;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0 13px;
+    cursor: pointer;
+    border: 1px solid black;
+    margin-top: 15px;
+    text-transform: uppercase;
+    font-weight: 400;
+    transition: 0.5s ease;
+}
+
+.buttons button:hover {
+    box-shadow: 0 2px 20px dodgerblue;
+}
+
+.buttons button:active {
+    background-color: #fff;
+    color: #000022;
+}
+
+.devPic {
+    /* box-shadow: 0 2px 10px dodgerblue; */
+    border-radius: 30%;
+    background-color: transparent;
+    height: 74vh;
+    margin-top: 45px;
+    transition: 0.5s ease;
+}
+
+.devPic:hover {
+    box-shadow: 0 2px 50px dodgerblue;
+}
+
+.devPic img {
+    height: 74vh;
+    border-radius: 30%;
+}
+
+.iconLinks {
+    margin: 80px 0 0 25px;
+
+}
+
+.iconLinks a {
+    text-decoration: none;
+    color: white;
+
+}
+
+
+
+.iconLinks a i {
+    padding: 16px;
+    margin-right: 46px;
+    font-size: 22px;
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow: 0 2px 10px dodgerblue;
+    transition: 0.3s ease;
+}
+
+.iconLinks a i:hover {
+    box-shadow: 0 2px 50px dodgerblue;
+    color: white;
+}
+
+
+
+
+/* About=========================================================== */
+
+.aboutMain {
+    font-family: "Fira Sans", serif;
+    width: 100%;
+    height: 90vh;
+    /* background: linear-gradient(#000022, #055bfb); */
+    background: #000022;
+}
+
+.aboutMe {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: transparent;
+    box-shadow: 0 2px 10px dodgerblue;
+    border-radius: 55px;
+    padding: 29px;
+    margin-inline: 25px;
+    transition: 0.3s ease;
+    font-family: "Montserrat", serif;
+}
+
+.aboutMe:hover {
+    box-shadow: 0 2px 80px dodgerblue;
+}
+
+.aboutAndEducation {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.aboutAndEducation .about h1 {
+    font-family: "Montserrat", serif;
+    text-align: left;
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-left: 4%;
+    font-weight: 1000;
+    text-shadow: 0 2px 60px dodgerblue;
+    color: #a3bded;
+}
+
+.aboutAndEducation .about p {
+    color: #a3bded;
+    text-align: left;
+    font-size: 16px;
+    font-family: "Montserrat", serif;
+    line-height: 29px;
+    margin-left: 4%;
+
+}
+
+#educationHeading {
+    font-family: "Montserrat", serif;
+    text-align: left;
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-left: 4%;
+    margin-top: 50px;
+    font-weight: 1000;
+    text-shadow: 0 2px 60px dodgerblue;
+    color: #a3bded;
+}
+
+.aboutAndEducation .education ul {
+    color: #a3bded;
+    list-style: none;
+    width: 65%;
+    text-align: left;
+    font-family: "Montserrat", serif;
+    line-height: 27px;
+}
+
+.aboutAndEducation .education ul li b {
+    font-size: 19px;
+}
+
+.aboutAndEducation .education ul li:nth-child(3) {
+    margin-bottom: 15px;
+}
+
+
+.aboutMe .downloadCVButton {
+
+    margin-right: 66px;
+}
+
+.aboutMe .downloadCVButton a button {
+    font-family: "Montserrat", serif;
+    padding: 18px 24px;
+    background-color: transparent;
+    color: white;
+    box-shadow: 0 2px 10px #333333;
+    border-radius: 35px;
+    font-size: 18px;
+    margin: 0 13px;
+    cursor: pointer;
+    border: 1px solid black;
+    margin-top: 15px;
+    text-transform: uppercase;
+    font-weight: 400;
+    transition: 0.5s ease;
+}
+
+.aboutMe .downloadCVButton a button:hover {
+    box-shadow: 0 2px 20px dodgerblue;
+}
+
+.aboutMe .downloadCVButton a button:active {
+    background-color: #fff;
+    color: #000022;
+}
+
+
+
+
+.aboutMePicDiv {
+    /* box-shadow: 0 2px 10px dodgerblue; */
+    border-radius: 50%;
+    background-color: transparent;
+    height: 60vh;
+    transition: 0.3s ease;
+}
+
+.aboutMePicDiv:hover {
+    box-shadow: 0 2px 30px dodgerblue;
+}
+
+.aboutMeMyPic img {
+    height: 60vh;
+    border-radius: 50%;
+}
+
+
+/* Experience========================================================================== */
+
+.experienceMain {
+    font-family: "Montserrat", serif;
+    width: 100%;
+    height: 90vh;
+    /* background: linear-gradient(#000022, #055bfb); */
+    background: #000022;
+    color: #a3bded;
+}
+
+.exp h3 {
+    text-align: center;
+    font-family: "Montserrat", serif;
+    text-shadow: 0 2px 60px dodgerblue;
+    color: #a3bded;
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    font-weight: 1000;
+}
+
+.exp {
+    border: 2px solid black;
+    background-color: transparent;
+    box-shadow: 0 2px 10px dodgerblue;
+    border-radius: 55px;
+    margin-bottom: 25px;
+    margin-inline: 85px;
+    transition: 0.3s ease;
+    padding-block: 8px;
+}
+
+.expInfoAndImage {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+
+
+.expInfo ul li {
+    color: #a3bded;
+    text-align: left;
+    font-size: 18px;
+    font-family: "Montserrat", serif;
+    line-height: 29px;
+    font-weight: 1000;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
+
+.expInfo ul li:nth-child(1) {
+    color: dodgerblue;
+    font-size: 25px;
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+
+.expInfoAndImage a {
+    text-decoration: none;
+    color: dodgerblue;
+    text-align: left;
+    font-size: 18px;
+    font-family: "Montserrat", serif;
+    line-height: 29px;
+    font-weight: 800;
+    text-transform: capitalize;
+    transition: 0.3s ease
+}
+
+.exp:nth-child(1) .expInfo i {
+    margin-left: 10px;
+}
+
+.exp:nth-child(1) .expImage i {
+    margin-left: 185px;
+}
+
+
+.expInfoAndImage a:hover {
+    color: #a3bded;
+}
+
+
+.expImage i {
+    font-size: 155px;
+}
+
+
+.exp:hover {
+    box-shadow: 0 2px 80px dodgerblue;
+}
+
+/* Skills============================================================================= */
+.skillsMain {
+    font-family: "Montserrat", serif;
+    width: 100%;
+    height: 90vh;
+    /* background: linear-gradient(#000022, #055bfb); */
+    background: #000022;
+    display: flex;
+
+
+}
+
+.skillsSection1 {
+    width: 50vw;
+    height: 90vh;
+}
+
+.skillsSection1Box {
+    width: 90%;
+    margin-inline: 5%;
+    margin-block: 5vh;
+    height: 80vh;
+}
+
+.skillsSection1Box h1 {
+    text-align: center;
+    margin-bottom: 45px;
+    color: #a3bded;
+    font-weight: 1000;
+    text-transform: uppercase;
+    text-shadow: 0 2px 60px dodgerblue;
+    border-radius: 20px;
+    font-family: "Montserrat", serif;
+}
+
+
+.skillsSection1Box .testingSkills {
+    font-size: 23px;
+    display: grid;
+    align-items: center;
+    box-shadow: 0 2px 10px dodgerblue;
+    border-radius: 55px;
+    padding: 25px;
+    transition: 0.5s ease;
+
+}
+
+.skillsSection1Box .testingSkills:hover {
+    box-shadow: 0 2px 100px dodgerblue;
+}
+
+.skillsSection1Box .testingSkills .testingSkillsRows {
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+.skillsSection1Box .testingSkills .testingSkillsRows span {
+    background-color: transparent;
+    color: white;
+    font-size: 14px;
+    padding-block: 13.5px;
+    border-radius: 55px;
+    text-transform: uppercase;
+    box-shadow: 0 2px 10px dodgerblue;
+    width: 30%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s ease;
+    font-family: "Montserrat", serif;
+}
+
+.skillsSection1Box .testingSkills .testingSkillsRows span:hover {
+    cursor: pointer;
+    box-shadow: 0 2px 40px dodgerblue;
+}
+
+
+
+
+
+
+.skillsSection2 {
+    width: 50vw;
+    height: 90vh;
+}
+
+.skillsSection2Box {
+    width: 90%;
+    margin-inline: 5%;
+    margin-block: 5vh;
+    height: 80vh;
+}
+
+.skillsSection2Box h1 {
+    text-align: center;
+    margin-bottom: 45px;
+    color: #a3bded;
+    font-weight: 1000;
+    text-transform: uppercase;
+    text-shadow: 0 2px 60px dodgerblue;
+    border-radius: 20px;
+}
+
+
+.skillsSection2Box .webDevSkills {
+    font-size: 23px;
+    display: grid;
+    align-items: center;
+    box-shadow: 0 2px 10px dodgerblue;
+    border-radius: 55px;
+    padding: 25px;
+    transition: 0.5s ease;
+}
+
+.skillsSection2Box .webDevSkills:hover {
+    box-shadow: 0 2px 100px dodgerblue;
+}
+
+.skillsSection2Box .webDevSkills .webDevSkillsRows {
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+
+
+.skillsSection2Box .webDevSkills .webDevSkillsRows span {
+    background-color: transparent;
+    color: white;
+    font-size: 14px;
+    padding-block: 13.5px;
+    border-radius: 55px;
+    text-transform: uppercase;
+    box-shadow: 0 2px 10px dodgerblue;
+    width: 30%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s ease;
+}
+
+.skillsSection2Box .webDevSkills .webDevSkillsRows span i {
+    font-size: 25px;
+    margin-right: 5px;
+}
+
+.skillsSection2Box .webDevSkills .webDevSkillsRows span:hover {
+    cursor: pointer;
+    box-shadow: 0 2px 40px dodgerblue;
+}
+
+.skillsSection2Box .webDevSkills .webDevSkillsRows span:hover i {
+    transform: scale(1.2);
+}
+
+
+/* Projects========================================================================== */
+
+.projectsMain {
+    font-family: "Fira Sans", serif;
+    width: 100%;
+    height: 90vh;
+    /* background: linear-gradient(#000022, #055bfb); */
+    background: #000022;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+
+/* Project Box 1 */
+
+.projectsMain .projectBox1 h2 {
+    text-transform: uppercase;
+    text-align: center;
+    color: #a3bded;
+    font-weight: 1000;
+    text-shadow: 0 2px 50px dodgerblue;
+    font-family: "Montserrat", serif;
+    border-top-left-radius: 35px;
+    margin-bottom: 35px;
+    padding: 8px;
+
+}
+
+.projectsMain .projectBox1 {
+    width: 31%;
+    height: 90vh;
+    box-shadow: 0 2px 10px dodgerblue;
+    margin-bottom: 30px;
+    border-bottom-left-radius: 35px;
+    border-top-left-radius: 35px;
+    transition: 0.3s ease;
+}
+
+.projectsMain .projectBox1:hover {
+    box-shadow: 0 2px 100px dodgerblue;
+}
+
+.projectsMain .projectBox1 .projects {
+    margin-inline: 5%;
+}
+
+.projectsMain .projectBox1 .projects h2 {
+    font-size: 21px;
+    text-align: center;
+    border-radius: 35px;
+}
+
+.projectsMain .projectBox1 .projects a {
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.projectsMain .projectBox1 .projects .projectCol1 {
+    width: 100%;
+    margin-bottom: 65px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.projectsMain .projectBox1 .projects .projectCol1 .projectColHeading button {
+    font-family: "Montserrat", serif;
+    padding: 0px 24px;
+    background-color: transparent;
+    color: white;
+    box-shadow: 0 2px 10px dodgerblue;
+    border-radius: 35px;
+    font-size: 18px;
+    margin: 0 13px;
+    margin-left: 24px;
+    cursor: pointer;
+    border: 1px solid black;
+    text-transform: uppercase;
+    font-weight: 400;
+    transition: 0.5s ease;
+}
+
+.projectsMain .projectBox1 .projects .projectCol1 .projectColHeading button:hover {
+    box-shadow: 0 2px 60px dodgerblue;
+}
+
+/* .projectsMain .projectBox1 .projects .projectCol1 a img {
+    border-radius: 50%;
+    width: 11rem;
+    width: 110px;
+    height: 110px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 0.3s ease;
+}
+
+.projectsMain .projectBox1 .projects .projectCol1 a img:hover {
+    box-shadow: 0 2px 40px dodgerblue;
+} */
+
+
+
+.projectsMain .projectBox1 .projects .projectCol2 {
+    width: 100%;
+    margin-bottom: 65px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.projectsMain .projectBox1 .projects .projectCol2 .projectColHeading button {
+    font-family: "Montserrat", serif;
+    padding: 0px 24px;
+    background-color: transparent;
+    color: white;
+    box-shadow: 0 2px 10px dodgerblue;
+    border-radius: 35px;
+    font-size: 18px;
+    margin: 0 13px;
+    margin-left: 24px;
+    cursor: pointer;
+    border: 1px solid black;
+    text-transform: uppercase;
+    font-weight: 400;
+    transition: 0.5s ease;
+}
+
+.projectsMain .projectBox1 .projects .projectCol2 .projectColHeading button:hover {
+    box-shadow: 0 2px 60px dodgerblue;
+}
+
+/* .projectsMain .projectBox1 .projects .projectCol2 a img {
+    border-radius: 50%;
+    width: 11rem;
+    width: 110px;
+    height: 110px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 0.3s ease;
+}
+
+
+.projectsMain .projectBox1 .projects .projectCol2 a img:hover {
+    box-shadow: 0 2px 40px dodgerblue;
+} */
+
+.projectsMain .projectBox1 .projects .projectCol3 {
+    width: 100%;
+    margin-bottom: 65px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.projectsMain .projectBox1 .projects .projectCol3 .projectColHeading button {
+    font-family: "Montserrat", serif;
+    padding: 0px 24px;
+    background-color: transparent;
+    color: white;
+    box-shadow: 0 2px 10px dodgerblue;
+    border-radius: 35px;
+    font-size: 18px;
+    margin: 0 13px;
+    margin-left: 55px;
+    cursor: pointer;
+    border: 1px solid black;
+    text-transform: uppercase;
+    font-weight: 400;
+    transition: 0.5s ease;
+}
+
+.projectsMain .projectBox1 .projects .projectCol3 .projectColHeading button:hover {
+    box-shadow: 0 2px 60px dodgerblue
+}
+
+/* .projectsMain .projectBox1 .projects .projectCol3 a img {
+    border-radius: 50%;
+    width: 11rem;
+    width: 110px;
+    height: 110px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 0.3s ease;
+}
+
+
+.projectsMain .projectBox1 .projects .projectCol3 a img:hover {
+    box-shadow: 0 2px 40px dodgerblue;
+} */
+
+.projectsMain .projectBox1 .projects .projectCol1 .projectColHeading p,
+.projectCol2 .projectColHeading p,
+.projectCol3 .projectColHeading p {
+    color: #a3bded;
+    margin-left: 28px;
+    font-size: 19px;
+}
+
+
+.projectsMain .projectBox1:hover i {
+    transform: scaleX(2.8);
+    margin-left: 40px;
+    color: #a3bded;
+}
+
+
+
+
+
+/* Project Box 2 */
+
+
+.projectsMain .projectBox2 h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 1000;
+    color: #a3bded;
+    text-shadow: 0 2px 50px dodgerblue;
+    font-family: "Montserrat", serif;
+    margin-bottom: 35px;
+    padding: 8px;
+}
+
+.projectsMain .projectBox2 {
+    width: 31%;
+    height: 90vh;
+    box-shadow: 0 2px 10px dodgerblue;
+    margin-bottom: 30px;
+    transition: 0.3s ease;
+}
+
+.projectsMain .projectBox2:hover {
+    box-shadow: 0 2px 100px dodgerblue;
+}
+
+.projectsMain .projectBox2 .projects {
+    margin-inline: 5%;
+}
+
+.projectsMain .projectBox2 .projects h2 {
+    font-size: 21px;
+    text-align: center;
+    border-radius: 35px;
+}
+
+.projectsMain .projectBox2 .projects a {
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.projectsMain .projectBox2 .projects .projectCol1 {
+    width: 100%;
+    margin-bottom: 65px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.projectsMain .projectBox2 .projects .projectCol1 .projectColHeading button {
+    font-family: "Montserrat", serif;
+    padding: 0px 24px;
+    background-color: transparent;
+    color: white;
+    box-shadow: 0 2px 10px dodgerblue;
+    border-radius: 35px;
+    font-size: 18px;
+    margin: 0 13px;
+    margin-left: 10px;
+    cursor: pointer;
+    border: 1px solid black;
+    text-transform: uppercase;
+    font-weight: 400;
+    transition: 0.5s ease;
+}
+
+.projectsMain .projectBox2 .projects .projectCol1 .projectColHeading button:hover {
+    box-shadow: 0 2px 60px dodgerblue;
+}
+
+
+/* .projectsMain .projectBox2 .projects .projectCol1 a img {
+    border-radius: 50%;
+    width: 11rem;
+    width: 110px;
+    height: 110px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 0.3s ease;
+}
+
+.projectsMain .projectBox2 .projects .projectCol1 a img:hover {
+    box-shadow: 0 2px 40px dodgerblue;
+} */
+
+.projectsMain .projectBox2 .projects .projectCol2 {
+    width: 100%;
+    margin-bottom: 65px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.projectsMain .projectBox2 .projects .projectCol2 .projectColHeading {
+    align-items: center;
+}
+
+.projectsMain .projectBox2 .projects .projectCol2 .projectColHeading button {
+    font-family: "Montserrat", serif;
+    padding: 0px 24px;
+    background-color: transparent;
+    color: white;
+    box-shadow: 0 2px 10px dodgerblue;
+    border-radius: 35px;
+    font-size: 18px;
+    margin: 0 13px;
+    margin-left: 60px;
+    cursor: pointer;
+    border: 1px solid black;
+    text-transform: uppercase;
+    font-weight: 400;
+    transition: 0.5s ease;
+}
+
+.projectsMain .projectBox2 .projects .projectCol2 .projectColHeading button:hover {
+    box-shadow: 0 2px 60px dodgerblue;
+}
+
+
+/* .projectsMain .projectBox2 .projects .projectCol2 a img {
+    border-radius: 50%;
+    width: 11rem;
+    width: 110px;
+    height: 110px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 0.3s ease;
+} */
+
+/* .projectsMain .projectBox2 .projects .projectCol2 a img:hover {
+    box-shadow: 0 2px 40px dodgerblue;
+} */
+
+.projectsMain .projectBox2 .projects .projectCol3 {
+    width: 100%;
+    margin-bottom: 65px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.projectsMain .projectBox2 .projects .projectCol3 .projectColHeading button {
+    font-family: "Montserrat", serif;
+    padding: 0px 24px;
+    background-color: transparent;
+    color: white;
+    box-shadow: 0 2px 10px dodgerblue;
+    border-radius: 35px;
+    font-size: 18px;
+    margin: 0 13px;
+    cursor: pointer;
+    border: 1px solid black;
+    margin-left: 21px;
+    text-transform: uppercase;
+    font-weight: 400;
+    transition: 0.5s ease;
+}
+
+.projectsMain .projectBox2 .projects .projectCol3 .projectColHeading button:hover {
+    box-shadow: 0 2px 60px dodgerblue;
+}
+
+/* .projectsMain .projectBox2 .projects .projectCol3 a img {
+    border-radius: 50%;
+    width: 11rem;
+    width: 110px;
+    height: 110px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 0.3s ease;
+}
+
+.projectsMain .projectBox2 .projects .projectCol3 a img:hover {
+    box-shadow: 0 2px 40px dodgerblue;
+} */
+
+.projectsMain .projectBox2 .projects .projectCol1 .projectColHeading p,
+.projectCol2 .projectColHeading p,
+.projectCol3 .projectColHeading p {
+    color: #a3bded;
+    font-size: 19px;
+    margin-left: 28px;
+}
+
+.projectsMain .projectBox2:hover i {
+    transform: scaleX(2.8);
+    margin-left: 40px;
+    color: #a3bded;
+}
+
+/* Project 3 */
+
+
+.projectsMain .projectBox3 h2 {
+    text-transform: uppercase;
+    text-align: center;
+    color: #a3bded;
+    text-shadow: 0 2px 50px dodgerblue;
+    font-family: "Montserrat", serif;
+    font-weight: 1000;
+    border-top-right-radius: 35px;
+    margin-bottom: 35px;
+    padding: 8px;
+}
+
+.projectsMain .projectBox3 {
+    width: 31%;
+    height: 90vh;
+    box-shadow: 0 2px 10px dodgerblue;
+    margin-bottom: 30px;
+    border-bottom-right-radius: 35px;
+    border-top-right-radius: 35px;
+    transition: 0.3s ease;
+}
+
+.projectsMain .projectBox3:hover {
+    box-shadow: 0 2px 100px dodgerblue;
+}
+
+.projectsMain .projectBox3 .projects {
+    margin-inline: 5%;
+}
+
+.projectsMain .projectBox3 .projects h2 {
+    font-size: 20px;
+    text-align: center;
+    padding: 12px;
+    border-radius: 35px;
+}
+
+.projectsMain .projectBox3 .projects a {
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.projectsMain .projectBox3 .projects .projectCol1 {
+    width: 100%;
+    margin-bottom: 65px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.projectsMain .projectBox3 .projects .projectCol1 .projectColHeading button {
+    font-family: "Montserrat", serif;
+    padding: 00px 24px;
+    background-color: transparent;
+    color: white;
+    box-shadow: 0 2px 10px dodgerblue;
+    border-radius: 35px;
+    font-size: 18px;
+    margin: 0 13px;
+    margin-left: 21px;
+    cursor: pointer;
+    border: 1px solid black;
+    text-transform: uppercase;
+    font-weight: 400;
+    transition: 0.5s ease;
+}
+
+.projectsMain .projectBox3 .projects .projectCol1 .projectColHeading button:hover {
+    box-shadow: 0 2px 60px dodgerblue;
+}
+
+/* .projectsMain .projectBox3 .projects .projectCol1 a img {
+    border-radius: 50%;
+    width: 11rem;
+    width: 110px;
+    height: 110px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 0.3s ease;
+}
+
+.projectsMain .projectBox3 .projects .projectCol1 a img:hover {
+    box-shadow: 0 2px 40px dodgerblue;
+} */
+
+.projectsMain .projectBox3 .projects .projectCol2 {
+    width: 100%;
+    margin-bottom: 65px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.projectsMain .projectBox3 .projects .projectCol2 .projectColHeading button {
+    font-family: "Montserrat", serif;
+    padding: 00px 24px;
+    background-color: transparent;
+    color: white;
+    box-shadow: 0 2px 10px dodgerblue;
+    border-radius: 35px;
+    font-size: 18px;
+    margin: 0 13px;
+    margin-left: 30px;
+    cursor: pointer;
+    border: 1px solid black;
+    text-transform: uppercase;
+    font-weight: 400;
+    transition: 0.5s ease;
+}
+
+.projectsMain .projectBox3 .projects .projectCol2 .projectColHeading button:hover {
+    box-shadow: 0 2px 60px dodgerblue;
+}
+
+/* .projectsMain .projectBox3 .projects .projectCol2 a img {
+    border-radius: 50%;
+    width: 11rem;
+    width: 110px;
+    height: 110px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 0.3s ease;
+}
+
+.projectsMain .projectBox3 .projects .projectCol2 a img:hover {
+    box-shadow: 0 2px 40px dodgerblue;
+} */
+
+.projectsMain .projectBox3 .projects .projectCol3 {
+    width: 100%;
+    margin-bottom: 65px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.projectsMain .projectBox3 .projects .projectCol3 .projectColHeading button {
+    font-family: "Montserrat", serif;
+    padding: 0px 24px;
+    background-color: transparent;
+    color: white;
+    box-shadow: 0 2px 10px dodgerblue;
+    border-radius: 35px;
+    font-size: 18px;
+    margin: 0 13px;
+    margin-left: 31px;
+    cursor: pointer;
+    border: 1px solid black;
+    text-transform: uppercase;
+    font-weight: 400;
+    transition: 0.5s ease;
+}
+
+.projectsMain .projectBox3 .projects .projectCol3 .projectColHeading button:hover {
+    box-shadow: 0 2px 60px dodgerblue;
+}
+
+/* .projectsMain .projectBox3 .projects .projectCol3 a img {
+    border-radius: 50%;
+    width: 11rem;
+    width: 110px;
+    height: 110px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 0.3s ease;
+}
+
+.projectsMain .projectBox3 .projects .projectCol3 a img:hover {
+    box-shadow: 0 2px 40px dodgerblue;
+} */
+
+.projectsMain .projectBox3 .projects .projectCol1 .projectColHeading p,
+.projectCol2 .projectColHeading p,
+.projectCol3 .projectColHeading p {
+    color: #a3bded;
+    font-size: 19px;
+    margin-left: 28px;
+}
+
+.projectsMain .projectBox3:hover i {
+    transform: scaleX(2.8);
+    margin-left: 40px;
+    color: #a3bded;
+}
+
+.seeMore a {
+    color: #a3bded;
+    transition: 0.3s ease;
+    font-size: 10px;
+}
+
+.seeMore a:hover {
+    color: white;
+}
+
+
+
+/* Contact Page================================= */
+
+.contactMain {
+    font-family: "Montserrat", serif;
+    width: 100%;
+    height: 90vh;
+    /* background: linear-gradient(#000022, #055bfb); */
+    background: #000022;
+}
+
+/* .contactMain h1{
+    font-family: "Source Code Pro", serif;
+    text-align: left;
+    color: white;
+    font-size: 50px;
+    background-color: red;
+    text-transform: uppercase;
+} */
+
+
+
+.infoAndForm {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+    text-align: center;
+    padding: 5% 0 5% 0;
+    background-color: #000022;
+    box-shadow: 0 2px 10px dodgerblue;
+    border-radius: 55px;
+    margin-inline: 15%;
+    transition: 0.5s ease;
+    font-family: "Montserrat", serif;
+}
+
+.infoAndForm:hover {
+    box-shadow: 0 2px 90px dodgerblue;
+}
+
+.infoAndForm .info h1 {
+    padding-top: 20px;
+    padding-bottom: 62px;
+    font-size: 50px;
+    font-family: "Montserrat", serif;
+    text-transform: uppercase;
+    color: #a3bded;
+    text-shadow: 0 2px 60px dodgerblue;
+
+}
+
+.infoAndForm .info p:nth-child(1) {
+    margin-top: 42px;
+}
+
+.infoAndForm .info p {
+    font-size: 28px;
+    padding-bottom: 62px;
+    font-family: "Montserrat", serif;
+    color: #a3bded;
+}
+
+/* .infoAndForm .info a {
+    text-decoration: none;
+    color: white;
+    font-size: 19px;
+    font-weight: 600;
+    margin-left: 20px;
+    transition: 0.3s ease;
+} */
+
+.info a {
+    text-decoration: none;
+    color: white;
+
+}
+
+
+
+.info a i {
+    padding: 16px;
+    margin-right: 46px;
+    font-size: 22px;
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow: 0 2px 10px dodgerblue;
+    transition: 0.3s ease;
+}
+
+.info a i:hover {
+    box-shadow: 0 2px 50px dodgerblue;
+    color: white;
+}
+
+.infoAndForm .form form div {
+    padding: 20px 0;
+}
+
+.infoAndForm .form form div input {
+    padding: 15px;
+    width: 20vw;
+    border-radius: 10px;
+    font-size: 15px;
+    background: #a3bded;
+    font-family: "Montserrat", serif;
+    box-shadow: 0 2px 10px dodgerblue;
+    border: none;
+    outline: none;
+    transition: 0.3s ease;
+    color: #002222;
+    font-weight: 500;
+}
+
+.infoAndForm .form form div input::placeholder {
+    color: #002222;
+    font-weight: 600;
+}
+
+.infoAndForm .form form div input:hover {
+    box-shadow: 0 2px 50px white;
+
+}
+
+.infoAndForm .form form div input:focus {
+
+    outline: none;
+    box-shadow: 0 2px 50px #000022;
+    color: #000022
+}
+
+.infoAndForm .form form div textarea {
+    border-radius: 10px;
+    box-shadow: 0 2px 10px dodgerblue;
+    background: #a3bded;
+    color: #002222;
+    font-weight: 500;
+    padding: 15px;
+    font-size: 15px;
+    font-family: "Montserrat", serif;
+    transition: 0.3s ease;
+
+}
+
+.infoAndForm .form form div textarea::placeholder {
+    color: #002222;
+    font-weight: 600;
+}
+
+.infoAndForm .form form div textarea:hover {
+    box-shadow: 0 2px 50px white;
+
+}
+
+.infoAndForm .form form div textarea:focus {
+
+
+    outline: none;
+
+
+}
+
+.infoAndForm .form form button {
+    padding: 12px 24px;
+    background: #a3bded;
+    color: #000022;
+    box-shadow: 0 2px 10px #000022;
+    border-radius: 35px;
+    font-weight: 600;
+    font-size: 15px;
+    margin: 0 3px;
+    cursor: pointer;
+    border: 1px solid black;
+    margin-top: 15px;
+    font-family: "Montserrat", serif;
+    transition: 0.3s ease;
+}
+
+.infoAndForm .form form button:hover {
+    box-shadow: 0 2px 50px white;
+}
+
+.infoAndForm .form form button:active {
+    /* background: #fff;
+    color: #000022; */
+    transform: scale(0.9);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1211px) {
+
+    /* .sidebar{
+        transform: translate(-443px,0px);
+        position: absolute;
+        background-color: #000022;
+    } */
+    .devPic {
+        display: none;
+    }
+
+    .main {
+        width: 100%;
+        background-color: #000022;
+    }
+}
