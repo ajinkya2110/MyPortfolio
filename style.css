@@ -18,16 +18,31 @@
 #navigationBar {
     height: 10vh;
     background-color: #000022;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#navigationBar a {
+    text-decoration: none;
+
+}
+
+#navigationBar a h1 {
+    display: none;
+    margin-right: 235px;
+
 }
 
 #navigationBar #nav ul {
     list-style: none;
-    background-color: #000022;
     display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 15px;
     font-size: 16px;
+    margin-right: 150px;
 }
 
 #navigationBar #nav ul a {
@@ -51,6 +66,119 @@
 #navigationBar #nav ul li i {
     color: #a3bded;
 }
+
+#mobile {
+    display: none;
+    align-items: center;
+}
+
+#closed {
+    display: none;
+}
+
+@media (max-width:500px) {
+
+    #nav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0px;
+        right: -200px;
+        height: 0vh;
+        width: 190px;
+        background-color: #000022;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+        padding: 60px 0px 0px 0px;
+        transition: 0.9s ease;
+    }
+
+    #navigationBar a h1 {
+        display: flex;
+    }
+
+    #navigationBar #nav ul {
+        display: flex;
+        flex-direction: column;
+        font-size: 12px;
+        background-color: #000022;
+        color: #a3bded;
+        border: 1px solid #a3bded;
+        font-weight: 600;
+    }
+
+    #nav ul li {
+        margin-bottom: 60px;
+        display: flex;
+        align-items: center;
+
+
+    }
+
+    #navigationBar #nav ul li i {
+        color: dodgerblue;
+    }
+
+    #navigationBar #nav.active {
+        right: 0px;
+    }
+
+    #mobile {
+        display: flex;
+        align-items: center;
+    }
+
+    #mobile i {
+        color: #a3bded;
+        font-size: 24px;
+        margin-top: 20px;
+        cursor: pointer;
+    }
+
+    #closed {
+        display: initial;
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        color: #a3bded;
+        font-size: 24px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Main============================================================================== */
 
@@ -111,7 +239,6 @@
 
 .buttons {
     margin-top: 34px;
-
 }
 
 .buttons button {
@@ -121,7 +248,6 @@
     color: white;
     box-shadow: 0 2px 10px #333333;
     border-radius: 35px;
-    font-weight: bold;
     font-size: 18px;
     margin: 0 13px;
     cursor: pointer;
@@ -161,13 +287,11 @@
 
 .iconLinks {
     margin: 80px 0 0 25px;
-
 }
 
 .iconLinks a {
     text-decoration: none;
     color: white;
-
 }
 
 
@@ -185,6 +309,63 @@
 .iconLinks a i:hover {
     box-shadow: 0 2px 50px dodgerblue;
     color: white;
+}
+
+@media (max-width:400px) {
+
+
+    .name {
+        margin: 65px 0px 30px 25px;
+        font-size: 17px;
+        text-align: left;
+    }
+
+    .about {
+        font-size: 17px;
+        text-align: left;
+        margin: 0px 0px 30px 25px;
+
+    }
+
+    .devPic {
+        height: 220px;
+    }
+
+    .devPic img {
+        height: 220px;
+    }
+
+    .devPic:hover {
+        box-shadow: 0 2px 50px dodgerblue;
+    }
+
+    .buttons {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 15px;
+    }
+
+    .buttons button {
+        font-size: 15px;
+        width: 180%;
+
+    }
+
+    .buttons button i {
+        margin-left: 25px;
+    }
+
+
+    .iconLinks {
+        display: flex;
+    }
+
+    .iconLinks a i {
+
+        margin-right: 10px;
+        font-size: 15px;
+    }
 }
 
 
@@ -324,6 +505,8 @@
     height: 60vh;
     border-radius: 50%;
 }
+
+@media (max-width:400px) {}
 
 
 /* Experience========================================================================== */
@@ -1374,3 +1557,236 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* @media (max-width:1211px) { */
+
+/* .sidebar{
+        transform: translate(-443px,0px);
+        position: absolute;
+        background-color: #000022;
+    } */
+/* .devPic {
+        display: none;
+    }
+
+    .main {
+        width: 100%;
+        background-color: #000022;
+    }
+} */
