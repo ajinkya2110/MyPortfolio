@@ -311,12 +311,12 @@
     color: white;
 }
 
-@media (max-width:400px) {
+@media (max-width:500px) {
 
 
     .name {
         margin: 65px 0px 30px 25px;
-        font-size: 17px;
+        font-size: 25px;
         text-align: left;
     }
 
