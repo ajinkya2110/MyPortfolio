@@ -323,7 +323,8 @@
     @media (max-width:500px) {
         .main {
             background-color: #000022;
-            overflow: hidden;
+            overflow-x: hidden;
+            overflow-y: hidden;
         }
 
 
@@ -568,7 +569,8 @@
     @media (max-width:500px) {
         .aboutMain {
             background-color: #000022;
-            overflow: hidden;
+            overflow-x: hidden;
+            overflow-y: hidden;
         }
 
 
