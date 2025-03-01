@@ -1699,13 +1699,16 @@
         color: white;
     }
 
+    .seeMoreMobile {
+        display: none;
+    }
+
     @media(max-width:500px) {
+
+
         .projectsMain {
             overflow-x: hidden;
             overflow-y: hidden;
-        }
-
-        .projectsMain {
             font-family: "Fira Sans", serif;
             width: 100%;
             height: 90vh;
@@ -1713,6 +1716,20 @@
             background: #000022;
             display: flex;
             flex-direction: column;
+        }
+
+        .seeMoreMobile {
+            display: flex;
+        }
+
+        .seeMoreMobile a {
+            text-decoration: none;
+            text-align: center;
+            color: #a3bded;
+        }
+
+        .seeMoreMobile a:hover {
+            color: white;
         }
 
 
