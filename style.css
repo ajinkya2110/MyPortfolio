@@ -76,7 +76,7 @@
     display: none;
 }
 
-@media (max-width:400px) {
+@media (max-width:550px) {
 
     #nav {
         display: flex;
@@ -319,7 +319,7 @@
     color: white;
 }
 
-@media (max-width:400px) {
+@media (max-width:550px) {
     .main {
         background-color: #000022;
         width: 500px;
@@ -566,7 +566,7 @@
     border-radius: 50%;
 }
 
-@media (max-width:400px) {
+@media (max-width:550px) {
     .aboutMain {
         background-color: #000022;
         width: 500px;
