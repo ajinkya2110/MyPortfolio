@@ -1001,6 +1001,105 @@
         transform: scale(1.2);
     }
 
+    @media(max-width:500px) {
+        .skillsMain {
+            overflow-x: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+
+
+        .skillsSection2Box {
+            width: 190%;
+            margin-block: 0vh;
+            height: auto;
+            margin-top: 15px;
+        }
+
+        .skillsSection2Box h1 {
+            text-align: center;
+            margin-bottom: 16px;
+            color: #a3bded;
+            font-weight: 700;
+            text-transform: uppercase;
+            text-shadow: 0 2px 60px dodgerblue;
+            font-size: 15px;
+        }
+
+        .skillsSection2Box .webDevSkills {
+            font-size: 23px;
+            box-shadow: 0 2px 10px dodgerblue;
+            border-radius: 55px;
+            transition: 0.5s ease;
+        }
+
+        .skillsSection2Box .webDevSkills .webDevSkillsRows span {
+            background-color: transparent;
+            color: white;
+            font-size: 9px;
+            border-radius: 55px;
+            text-transform: uppercase;
+            box-shadow: 0 2px 10px dodgerblue;
+            text-align: center;
+            transition: 0.5s ease;
+        }
+
+
+        .skillsSection2Box .webDevSkills .webDevSkillsRows {
+            margin-bottom: 16px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+
+
+
+        .skillsSection1Box {
+            width: 190%;
+            margin-block: 0vh;
+            height: auto;
+            margin-top: 15px;
+        }
+
+        .skillsSection1Box h1 {
+            text-align: center;
+            margin-bottom: 16px;
+            color: #a3bded;
+            font-weight: 700;
+            text-transform: uppercase;
+            text-shadow: 0 2px 60px dodgerblue;
+            font-size: 15px;
+        }
+
+        .skillsSection1Box .testingSkills {
+            font-size: 23px;
+            box-shadow: 0 2px 10px dodgerblue;
+            border-radius: 55px;
+            transition: 0.5s ease;
+        }
+
+
+        .skillsSection1Box .testingSkills .testingSkillsRows span {
+            background-color: transparent;
+            color: white;
+            font-size: 9px;
+            border-radius: 55px;
+            text-transform: uppercase;
+            box-shadow: 0 2px 10px dodgerblue;
+            text-align: center;
+            transition: 0.5s ease;
+        }
+
+        .skillsSection1Box .testingSkills .testingSkillsRows {
+            margin-bottom: 16px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+    }
+
 
     /* Projects========================================================================== */
 
