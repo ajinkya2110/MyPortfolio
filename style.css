@@ -2277,8 +2277,8 @@
         }
 
         .infoAndForm .form form div input {
-            padding: 5px;
-            width: 45vw;
+          padding: 5px;
+            width: 49vw;
             text-align: center;
             border-radius: 10px;
             font-size: 10px;
@@ -2289,7 +2289,7 @@
             outline: none;
             transition: 0.3s ease;
             color: #002222;
-            margin-left: 38px;
+            margin-left: 28px;
             font-weight: 500;
         }
 
