@@ -232,6 +232,10 @@
         text-shadow: 0 2px 100px dodgerblue;
     }
 
+    .nameMobile {
+        display: none;
+    }
+
     .about {
         font-size: 19px;
         font-family: "Montserrat", serif;
@@ -320,6 +324,7 @@
         color: white;
     }
 
+
     @media (max-width:500px) {
         .main {
             background-color: #000022;
@@ -341,6 +346,15 @@
             margin: 25px 0px 20px 35px;
             font-size: 25px;
             text-align: left;
+            display: none;
+        }
+
+        .nameMobile {
+            margin: 25px 0px 20px 35px;
+            font-size: 25px;
+            text-align: left;
+            display: flex;
+            font-weight: 400;
         }
 
         .devInfo .about {
@@ -2170,6 +2184,7 @@
         font-family: "Montserrat", serif;
         transition: 0.3s ease;
         margin-top: 08px;
+        resize: none;
     }
 
     .infoAndForm .form form div textarea::placeholder {
@@ -2212,7 +2227,7 @@
 
     }
 
-    @media(max-width:500px) {
+    @media(max-width:450px) {
         .contactMain {
             overflow-x: hidden;
             overflow-y: hidden;
@@ -2307,239 +2322,3 @@
             transition: 0.3s ease;
         }
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    /* @media (max-width:1211px) { */
-
-    /* .sidebar{
-            transform: translate(-443px,0px);
-            position: absolute;
-            background-color: #000022;
-        } */
-    /* .devPic {
-            display: none;
-        }
-
-        .main {
-            width: 100%;
-            background-color: #000022;
-        }
-    } */
